@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portairlogistix</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- this sets caching to expire in a little over a year
+  <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate" />
+  -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@dotlottie/player-component@2.3.0/dist/dotlottie-player.mjs"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      function initMap() {}
+      () => {
+        //this piece should be jquery. Figure out another way around this.
+        initMap = function () {
+          var map = new google.maps.Map(document.getElementById("map"), {});
+        };
+      };
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&amp;callback=initMap&amp;libraries=marker,places&amp;v=beta"
+      defer=""
+    ></script>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#1976d2" />
+  </head>
+
+  <body>
+    <app-root></app-root>
+    <noscript
+      >Please enable JavaScript to continue using this application.</noscript
+    >
+  </body>
+</html>

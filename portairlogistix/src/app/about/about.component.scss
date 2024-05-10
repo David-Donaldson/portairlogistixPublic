@@ -1,0 +1,83 @@
+.container{
+  max-width:max-content;
+  padding:0;
+  overflow-x: hidden;
+}
+
+.custom-container{
+  background-color: #ffff;
+  max-width:max-content;
+}
+.custom-text {
+  font-size: 7vw;
+  font-weight: 500;
+  color: #ffff;
+  line-height: .75 !important;
+}
+.regular-text {
+  color: #ffff;
+  font-size: 20px;
+  line-height: 1.7 !important;
+}
+.middle-header{
+  color: #3F92F6;
+}
+.vision-text{
+  color: #4B5155;
+  line-height: 2 !important;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 24;
+  font-size: 5em;
+  color: #3F92F6;
+}
+.valuesText{
+  color: #4B5155;
+}
+
+.spacer{
+  aspect-ratio: 675/300;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(.8s);
+  padding: 0;
+}
+.layer1{
+  background-image: url('../../assets/polygon4.svg');
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-div{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+@media (max-width: 1234px){
+  .layer1.spacer{
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1234px){
+  .layer1.spacer{
+    display: none;
+  }
+  .col-md-5{
+    width: auto !important;
+  }
+}
+@media (max-width: 992px){
+  .custom-text{
+    font-size: 50px;
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,157 @@
+.navbar-custom{
+  //background-color: #ffff !important;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  padding: 2px;
+}
+.scrollnavFixed{
+  background-color: #3F92F6;
+}
+.imageSpan {
+  padding-left: 5%;
+}
+#navbarNav{
+  padding-left: 200px !important;
+}
+
+.active{
+  color: #AED8E5 !important;
+}
+.nav-link{
+  z-index: 999;
+}
+.nav-link:hover{
+  color: #AED8E5;
+}
+nav{
+  padding-bottom: 0px;
+}
+
+span{
+  z-index: 999;
+}
+
+.aboutPage{
+  background-color: #67A2FA !important;
+}
+.ratesPage{
+  background-color: #3F92F6 !important;
+}
+
+.headerBackgroundImage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: url('../../assets/contact-bg.svg');
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.nav-item{
+  text-align: right;
+  padding-right: 2%;
+}
+
+/*
+  Fixed & non-fixed
+*/
+
+.fixed {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  background-color: #3F92F6 !important;
+  color: #ffff;
+  z-index: 999;
+  padding: 25px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  .custom-toggler .navbar-toggler {
+    border-color: rgb(255,255,255) !important;
+  }
+  .navbar-toggler{
+    border-color: rgb(255,255,255) !important;
+  }
+}
+.nav-link-fixed {
+  color: #ffff;
+}
+.img-fixed {
+  height: 80px;
+  width: 120px;
+}
+.button-fixed{
+  background-color: #0D132C;
+  color: #ffff;
+}
+.button-fixed:hover{
+  background-color: #AED8E5;
+  color: #0D132C;
+}
+
+.nofixed {
+  position: static;
+  top: -50px;
+  color: #ffff;
+}
+.nav-link-not-fixed {
+  color: #0D132C;
+}
+.img-not-fixed {
+  height: 120px;
+  width: 160px;
+}
+.button-not-fixed{
+  background-color: #0D132C;
+  color: #ffff;
+}
+.button-not-fixed:hover{
+  background-color: #3F92F6;
+}
+
+
+@media (max-width: 991px) {
+  .navButtons{
+    display: none;
+  }
+  .navButtonLinks{
+    display: block;
+  }
+  .imageSpan {
+    padding-left: 2% !important;
+  }
+}
+@media (min-width: 992px) {
+  .navButtons{
+    display: block;
+  }
+  .navButtonLinks{
+    display: none;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1316px){
+  .navButtons{
+    display: none;
+  }
+  .navButtonLinks{
+    display: block;
+  }
+}
+
+@media (min-width: 1500px){
+  #navbarNav{
+    padding-left: 400px !important;
+  }
+
+}
+
+

@@ -1,0 +1,76 @@
+<nav #navbarCustom class="navbar navbar-expand-lg navbar-custom" (scroll)="onscroll()"
+  [ngClass]="navbarfixed?'fixed':'nofixed'">
+  <div class="container-fluid">
+
+    <span class="imageSpan">
+      <a class="nav-link" routerLink="/home" routerLinkActive="active">
+        <img [src]="'/assets/portairlogo.png'" [ngClass]="navbarfixed?'img-fixed':'img-not-fixed'" alt="image">
+      </a>
+    </span>
+
+    <button class="navbar-toggler custom-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarNav" class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" [ngClass]="navbarfixed?'nav-link-fixed':'nav-link-not-fixed'"
+            routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" [ngClass]="navbarfixed?'nav-link-fixed':'nav-link-not-fixed'"
+            routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rates" [ngClass]="navbarfixed?'nav-link-fixed':'nav-link-not-fixed'"
+            routerLinkActive="active">Rates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" [ngClass]="navbarfixed?'nav-link-fixed':'nav-link-not-fixed'"
+            routerLinkActive="active">Contact</a>
+        </li>
+
+        <div class="navButtons">
+          <div class="row">
+            <div class="col-sm-6">
+              <li class="nav-item pe-3">
+                <a href="{{customerLink}}">
+                  <button type="button" [ngClass]="navbarfixed?'button-fixed':'button-not-fixed'"
+                    class="btn btn-lg">Login</button>
+                </a>
+              </li>
+            </div>
+            <div class="col-sm-6">
+              <li class="nav-item">
+                <a href="{{registerLink}}">
+                  <button type="button" [ngClass]="navbarfixed?'button-fixed':'button-not-fixed'"
+                    class="btn btn-lg">Register</button>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+
+        <li class="nav-item navButtonLinks"><a class="nav-link"
+            [ngClass]="navbarfixed?'nav-link-fixed':'nav-link-not-fixed'" href="{{registerLink}}"><span
+              class="material-symbols-outlined">
+              app_registration
+            </span> Register</a>
+        </li>
+        <li class="nav-item navButtonLinks"><a class="nav-link"
+            [ngClass]="navbarfixed?'nav-link-fixed':'nav-link-not-fixed'" href="{{customerLink}}">
+
+            <span
+              class="material-symbols-outlined">
+              login
+            </span> Login</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>

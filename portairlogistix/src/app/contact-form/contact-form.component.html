@@ -1,0 +1,64 @@
+<div class="container">
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="row">
+
+        <div class="form-group">
+          <input type="text" class="customFormClass" name="ContactName" placeholder="Your Name"
+            [ngClass]="{ 'is-invalid': submitted && f.ContactName.errors }" formControlName="ContactName"
+            class="form-control" />
+          <div *ngIf="f.ContactName.errors" class="invalid-feedback">
+            <div class="errors" *ngIf="f.ContactName.errors.required">Your Name is Required</div>
+          </div>
+        </div>
+        <br />
+
+      </div>
+
+      <div class="row">
+        <div class="form-group mt-3">
+          <input type="text" name="EmailAddress" placeholder="Your Email"
+            [ngClass]="{ 'is-invalid': submitted && f.EmailAddress.errors }" formControlName="EmailAddress"
+            class="form-control" />
+          <div *ngIf="f.EmailAddress?.errors" class="invalid-feedback">
+            <div class="errors" *ngIf="f.EmailAddress.errors.required">Email is Required</div>
+            <div class="errors" *ngIf="f.EmailAddress.errors.email">Must be a valid email address</div>
+          </div>
+        </div>
+        <br />
+      </div>
+
+
+      <div class="row">
+        <div class="form-group mt-3">
+          <textarea rows="8" name="EmailMessage" placeholder="Your Message Here"
+            [ngClass]="{ 'is-invalid': submitted && f.EmailMessage.errors }" formControlName="EmailMessage"
+            class="form-control"></textarea>
+          <div *ngIf="f.EmailMessage.errors" class="invalid-feedback">
+            <div class="errors" *ngIf="f.EmailMessage.errors.required">A message is Required</div>
+          </div>
+        </div>
+        <br />
+      </div>
+
+      <div class="row">
+        <br />
+        <div class="pt-4"
+          style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="btn-group mt-3 col-md-3" role="group" aria-label="Ok Button Group">
+          <button type="submit" class="btn btn-lg custom-button text-nowrap">Send Message</button>
+        </div>
+        <input type="text" ngbAutofocus style="display:none" />
+      </div>
+    </div>
+
+  </form>
+
+
+
+</div>

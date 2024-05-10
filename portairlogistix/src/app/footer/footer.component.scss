@@ -1,0 +1,32 @@
+.custom-class{
+  position: relative;
+  background-color: #3F92F6 !important;
+  color: #ffff !important;
+  z-index: 999 !important;
+  bottom: 0px;
+}
+.company-logo{
+  height: 160px !important;
+  width: 200px !important;
+}
+.text-links {
+  color:#fff;
+}
+.text-links:hover{
+  color: #AED8E5;
+}
+@media (max-width: 991px) {
+  .navButtons{
+    display: none;
+  }
+  .navButtonLinks{
+    display: block;
+  }
+  .imageSpan {
+    padding-left: 2% !important;
+  }
+  .company-logo{
+    height: 120px !important;
+    width: 160px !important;
+  }
+}

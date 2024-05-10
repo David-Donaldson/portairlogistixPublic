@@ -1,0 +1,86 @@
+.container{
+  position: relative;
+  z-index: 500 !important;
+}
+.particlecontainer{
+  width: 100%;
+}
+.custom-text{
+  font-size: 7vw;
+  color: #0D132C;
+  line-height: 2 !important;
+}
+.custom-text2{
+  font-size: 40px;
+  color: #0D132C;
+}
+.custom-text3{
+  font-size: 26px;
+  color: #0D132C;
+}
+.mainButtons{
+  margin-left: 50px;
+}
+button{
+  background-color: #03047E !important;
+  color: #fff !important;
+}
+button:hover{
+  background-color: #3F92F6 !important;
+}
+.custom-card{
+  border-color: #3F92F6;
+  border-width: 2px;
+}
+.custom-card-offer{
+  border: none !important;
+  height: 80%;
+  width: 70%;
+}
+.dotlottie-player{
+  display: flex !important;
+  justify-content: center !important;
+}
+.custom-container{
+  position: relative;
+  padding: 0px 90px 0px 90px !important;
+  background-color: #fff !important;
+  //border-color: #3F92F6 !important;
+  border-width: 2px !important;
+  width: 100%;
+  z-index: 500 !important;
+}
+.lottiePersonStyle{
+  width: 180px;
+  height: 180px;
+}
+.lottieCartStyle{
+  width: 250px;
+  height: 250px;
+}
+.lottieShipStyle{
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 991px){
+  button{
+    width: auto;
+    margin-bottom: 15px;
+    white-space:nowrap;
+  }
+  .lottiePersonStyle{
+    width: 130px;
+    height: 130px;
+  }
+  .lottieCartStyle{
+    width: 180px;
+    height: 180px;
+  }
+  .lottieShipStyle{
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (min-width: 768px){
+
+}

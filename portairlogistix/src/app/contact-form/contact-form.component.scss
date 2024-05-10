@@ -1,0 +1,27 @@
+.custom-button{
+  background-color: #0D132C;
+  color: #ffff;
+}
+.custom-button:hover{
+  background-color: #ffff;
+  color: #0D132C;
+  font-weight: 500;
+}
+.errors{
+  color: #ffff;
+}
+input{
+  color: #6893C7;
+  background: #9DC8FC;
+}
+textarea{
+  color: #6893C7;
+  background: #9DC8FC;
+}
+::placeholder {
+  color: #6893C7;
+  opacity: 1; /* Firefox */
+}
+textarea:focus, input:focus{
+  box-shadow: none;
+}

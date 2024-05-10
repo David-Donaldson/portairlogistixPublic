@@ -1,0 +1,43 @@
+.container{
+  background-color: #3F92F6;
+}
+p {
+  margin: 0px;
+}
+.custom-text {
+  font-size: 7vw;
+  color: #ffff;
+  font-weight: 500;
+  line-height: .75 !important;
+}
+.rateText{
+  color: #ffff;
+  text-align: end;
+}
+.rateText2{
+  color: #ffff;
+}
+.disclaimerText{
+  line-height: 1 !important;
+}
+@media (max-width: 388px){
+  .custom-text{
+    font-size: 40px !important;
+    font-weight: 600;
+  }
+}
+@media (max-width: 992px){
+  .custom-text{
+    font-size: 60px;
+  }
+  .rateText{
+    color: #ffff;
+    text-align: start;
+  }
+}
+@media (max-width: 767px){
+  .rateText.rateText2{
+    color: #ffff;
+    text-align: center;
+  }
+}
